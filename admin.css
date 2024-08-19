@@ -1,0 +1,27 @@
+.container{
+    margin: 100px auto;
+    width: 300px;
+    background-color: beige;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    
+  
+  }
+  .navbarlinks {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbarlinks a {
+    text-decoration: none;
+    color: rgb(5, 0, 0);
+    font-size: 18px;
+  }
+  
+  .navbarlinks a:hover {
+    color: #b65656;
+  }

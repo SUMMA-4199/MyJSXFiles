@@ -1,0 +1,81 @@
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white; 
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  position: relative;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  color: #000000; 
+  font-weight: bold;
+}
+
+/* Full Screen Navbar Links */
+.navbar-links {
+  display: flex; 
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: rgb(5, 0, 0);
+  font-size: 18px;
+}
+
+.navbar-links a:hover {
+  color: #b65656;
+}
+
+/* Responsive Styles */
+.bar {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000000; 
+}
+
+.close-btn {
+  display: none; /* Hidden by default */
+  align-self: flex-end;
+  margin-bottom: 20px; /* Space from the top */
+  cursor: pointer;
+  font-size: 24px;
+  color: #000000;
+}
+
+@media (max-width: 600px) {
+  /* Navbar Links as Side Menu */
+  .navbar-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px; 
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: left 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding-top: 20px; 
+    padding-left: 20px; 
+  }
+
+  .navbar-links.open {
+    left: 0;
+  }
+
+  .bar {
+    display: block;
+  }
+  
+  .close-btn {
+    display: block; /* Show only on small screens when the sidebar is open */
+  }
+}
